@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+#header {
+	background-color: D0D0D0;
+	color: white;
+	padding: 5px;
+}
+
+#footer {
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	bottom: 0px;
+}
+
+.kuan input {
+	width: 510px;
+	height: 60px;
+	font-size: 24px;
+	border: 1px solid #1AFD9C;
+	float: left
+}
+
+.an input {
+	width: 150px;
+	height: 60px;
+	font-size: 24px;
+	background: #1AFD9C;
+	border: 1px solid #1AFD9C;
+	float: left
+}
+
+.txt-center {
+	text-align: right
+}
+
+#center {
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: auto;
+	height: 100px;
+	width: 800px;
+	vertical-align: middle;
+	line-height: 100px;
+}
+
+.bu button {
+	background: red;
+	border: 1px solid #FF0000;
+}
+
+.a {
+	color: red;
+}
+
+.a:visited {
+	color: green;
+}
+
+.a:hover {
+	color: yellow;
+}
+
+.a:active {
+	color: lime;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<!-- search book-->
+	
+	<package name="searchBookName"  extends="struts-default">
+	<!--back to main page-->
+		<action name="home" class="com.dongchang.action.MainPageAction" method="returnHome">
+			<result name="SUCCESS">/index.jsp</result>
+		</action>
+	<!--to search all books belong to the author-->
+		<action name="search" class="com.dongchang.action.MainPageAction" method="toSearch">
+			<result name="SUCCESS">/findbooks.jsp</result>
+			<result name="FALSE">/false.jsp</result>
+		</action>
+	<!--when click a book name to see the information-->
+		<action name="seeinfo" class="com.dongchang.action.InfoPageAction" method="seeInfo">
+			<result name="SUCCESS">/information.jsp</result>
+			<result name="FALSE">/false.jsp</result>
+		</action>
+	<!--delete book-->
+		<action name="deleteBook" class="com.dongchang.action.InfoPageAction" method="deleteBook">
+			<result name="SUCCESS">/successful.jsp</result>
+			<result name="FALSE">/false.jsp</result>
+		</action>
+	<!--to eidt book-->
+		<action name="toedit" class="com.dongchang.action.InfoPageAction" method="toEdit">
+			<result name="SUCCESS">/edit.jsp</result>
+		</action>
+	<!--update information-->
+		<action name="update" class="com.dongchang.action.EditPageAction" method="updateInfo">
+			<result name="SUCCESS">/successful.jsp</result>
+			<result name="FALSE">/false.jsp</result>
+		</action>
+	<!--start add book-->
+		<action name="startAddBook">
+			<result>/addbook.jsp</result>
+		</action>
+		
+	<!--add book-->
+		<action name="addBook"  class="com.dongchang.action.AddBookPageAction" method="addBook">
+			<result name="SUCCESS">/successful.jsp</result>
+			<result name="FALSE">/false.jsp</result>
+		</action>
+	<!--get help-->
+		<action name="getHelp">
+			<result>/help.jsp</result>
+		</action>
+	<!--get author-->
+		<action name="getAuthor" class="com.dongchang.action.MainPageAction" method="getAuthor">
+			<result name="SUCCESS">/author.jsp</result>
+			<result name="FALSE">/false.jsp</result>
+		</action>
+	</package>
+</struts>
+
+
+ 
